@@ -39,10 +39,24 @@ int main()
 int accept_money()
 {
   //write your code
+  int totalMoney = 0;
+  int enteredMoney;
+
+  while (totalMoney < TWINKIE_PRICE)
+  {
+    cout << "Insert money (only dollars, quarters, dimes, or nickels): ";
+    cin >> enteredMoney;
+
+    totalMoney += enteredMoney;
+    
+    cout << "You have entered " << totalMoney << " cents so far" << endl;
+  }
+    return totalMoney;
 }
 
-int compute_change(int total_paid) 
+int compute_change(int totalMoney)
 {
-//write your code
+  //write your code
+  return totalMoney - TWINKIE_PRICE;
 }
 
