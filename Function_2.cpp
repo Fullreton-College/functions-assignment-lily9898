@@ -48,15 +48,15 @@ int accept_money()
     cin >> enteredMoney;
 
     totalMoney += enteredMoney;
-    
+
     cout << "You have entered " << totalMoney << " cents so far" << endl;
   }
     return totalMoney;
 }
 
-int compute_change(int totalMoney)
+int compute_change(int money_entered)
 {
   //write your code
-  return totalMoney - TWINKIE_PRICE;
+  return money_entered - TWINKIE_PRICE;
 }
 
